@@ -28,8 +28,11 @@ public class PlayerController {
 		
 		for(Player p:playerList) {
 			if(p.getRun()>=1500 && p.getWicket()<=5) {
-			System.out.println("Player Name :"+p.getPname()+ "  " + "Runs :"+ p.getRun());
-		}
+			System.out.println("Player Name :"+p.getPname()+ "  " + "Runs :"+ p.getRun()+ "");
+		
+			
+			
+			}
 		
 		
 	}
