@@ -2,24 +2,24 @@ package com.tka.entity;
 
 public class Player {
 
-	private String pname;
 	private int g_no;
+	private String pname;
 	private int run;
 	private int wicket;
-	
-	private static String tname = "csk";
-	
+	private String tname;
 
 	public Player() {
 		super();
 	}
 
-	public Player(String pname, int g_no, int run, int wicket) {
+	public Player(int g_no, String pname, int run, int wicket, String tname) {
 		super();
-		this.pname = pname;
+
 		this.g_no = g_no;
+		this.pname = pname;
 		this.run = run;
 		this.wicket = wicket;
+		this.tname = tname;
 	}
 
 	public String getPname() {
@@ -54,10 +54,19 @@ public class Player {
 		this.wicket = wicket;
 	}
 
+	public String getTName() {
+		return tname;
+	}
+
+	public void setTName(String tname) {
+		this.tname = tname;
+	}
+
 	@Override
 	public String toString() {
-		return "Player [pname=" + pname + ", g_no=" + g_no + ", run=" + run + ", wicket=" + wicket + ", tname=" + tname
-				+ "]";
+		return "Player [pname=" + pname + ", tname=" + tname + "]";
 	}
+
+	
 
 }
